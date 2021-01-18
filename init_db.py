@@ -7,7 +7,7 @@ simpsons_characters = os.listdir(images_dir)
 db_name = "image_repo.db"
 
 
-def insert_character_file_paths(character: str) -> list:
+def insert_character_file_paths(character: str):
     """Inserts the file paths for a given character to DB"""
     dir_path = os.path.join(images_dir, character)
     
