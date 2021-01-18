@@ -1,4 +1,4 @@
-# Simpsons Image Repository
+# Shopify Challenge: Image Repository
 
 ## Preview
 
@@ -13,10 +13,10 @@ The theme of my image repository are images from the main characters in the Simp
 Here is a summary of the features I have implemented for the image repository:
 
 - Search for images of a character via uploading an image of that same character
-  - Fine-tuned a convolutional neural network (Resnet) to classify an image with either Homer, Marge, Bart, or Lisa on Kaggle dataset (Please see my [Kaggle notebook] for details)
-    - API has a confidence threshold, so the model is able to classify an image with none of the characters 
+  - Fine-tuned a convolutional neural network (Resnet) to classify an image with either Homer, Marge, Bart, or Lisa on Kaggle dataset (Please see my [Kaggle notebook](https://github.com/lauradang/simpson-image-repository/blob/main/simpsons-fastai.ipynb) for details)
+    - API has a confidence threshold, so the program is able to distinguish if there is no Simpsons character in the photo, thus returning 0 results
   - Classification/Prediction is used to query the SQLite database and retrieve the images of the predicted character
-- Search for images of a character via text
+- Search for images of a character via text (text match title of image)
   - Set up a database with columns:
     -  `file_path` : The path to the image in the repository
     - `title` : The title of the image
@@ -32,7 +32,7 @@ Here is a summary of the features I have implemented for the image repository:
 
 4. Try it out! 
 
-   a. Type one of "homer", "marge", "bart", or "lisa" to display images of those characters OR
+   a. Upload a picture of one of these characters to display the character's images from the repository OR
 
-   b. Upload a picture of one of these characters to display the character's images from the repository.
+   b. Type one of "homer", "marge", "bart", or "lisa" to display images of those characters.
 
