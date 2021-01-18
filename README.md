@@ -1,4 +1,4 @@
-# Shopify Challenge Image Repository
+# Shopify Challenge: Image Repository
 
 ## Preview
 
