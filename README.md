@@ -1,4 +1,4 @@
-# Simpsons Image Repository
+# Shopify Challenge Image Repository
 
 ## Preview
 
