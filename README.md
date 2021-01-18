@@ -32,7 +32,7 @@ Here is a summary of the features I have implemented for the image repository:
 
 4. Try it out! 
 
-   a. Type one of "homer", "marge", "bart", or "lisa" to display images of those characters OR
+   a. Upload a picture of one of these characters to display the character's images from the repository OR
 
-   b. Upload a picture of one of these characters to display the character's images from the repository.
+   b. Type one of "homer", "marge", "bart", or "lisa" to display images of those characters.
 
