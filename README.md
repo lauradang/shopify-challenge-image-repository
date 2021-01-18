@@ -15,7 +15,7 @@ Feature chosen:
   - Fine-tuned a convolutional neural network (Resnet) to classify an image with either Homer, Marge, Bart, or Lisa on Kaggle dataset (Please see my [Kaggle notebook](https://github.com/lauradang/simpson-image-repository/blob/main/simpsons-fastai.ipynb) for details)
     - API has a confidence threshold, so the program is able to distinguish if there is no Simpsons character in the photo, thus returning 0 results
   - Receives image via `POST` request from user form
-  - Classification/Prediction is used to query the SQLite database and retrieve the images of the predicted characterr
+  - Classification/Prediction is used to query the SQLite database and retrieve the images of the predicted character
 
 ## How to Run
 
