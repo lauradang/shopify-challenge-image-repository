@@ -25,15 +25,6 @@ def home():
     return render_template(HOMEPAGE)
 
 
-@app.route("/search", methods=["POST"])
-def search():
-    """Searches for image in repository by text"""
-    character = request.form["character"]
-    image_paths = get_repository_images(character, app.config["UPLOAD_FOLDER"])
-    
-    return render_template(HOMEPAGE, image_paths=image_paths)
-
-
 @app.route("/upload", methods=["POST"])
 def upload_file():
     """Search for similar images via image upload"""

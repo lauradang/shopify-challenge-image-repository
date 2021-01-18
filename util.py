@@ -4,7 +4,7 @@ import sqlite3
 from fastai.vision.all import load_learner
 from init_db import db_name
 
-CONFIDENCE_THRESHOLD = 0.5
+CONFIDENCE_THRESHOLD = 0.65
 image_classifier = load_learner("image_classifier.pkl")
 
 

@@ -11,18 +11,8 @@
     <body>
         <div class="container_row">
             <div class="layer1">
-                <form action="{{ url_for('search') }}" method="POST" enctype="multipart/form-data">
-                    <!-- <div class="wrap"> -->
-                        <h1>Simpsons Image Repository</h1>
-                        <p>Either search a Simpsons character or upload an image of one!</p>
-                        <div class="search">
-                            <input type="text" class="searchTerm" name="character" placeholder="Search a Simpsons character (Homer, Marge, Lisa, or Bart)">
-                            <button type="submit" class="searchButton">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    <!-- </div> -->
-                </form>
+                <h1>Simpsons Image Repository</h1>
+                <h3>Upload an image of a Simpsons! (Homer, Marge, Lisa, or Bart)</h3>
             </div>
             <div class="layer2">
                 <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
@@ -39,30 +29,6 @@
                     <img src="{{ image_path }}">
                 {% endfor %}
             </div>
-            <!-- <div class="column">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-            </div>
-            <div class="column">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-            </div>
-            <div class="column">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-                <img src="{{ bart }}">
-            </div> -->
         </div>      
     </body>
 </html>
