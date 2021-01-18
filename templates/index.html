@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Simpsons Image Repository</title>
+      <link rel="icon" href="{{ url_for('static', filename='style/donut.png') }}">
+      <link href="{{ url_for('static', filename='style/style.css') }}" rel="stylesheet">
+      <script src="https://use.fontawesome.com/ed824f70ad.js"></script>
+    </head>
+    <body>
+        <div class="container_row">
+            <div class="layer1">
+                <form action="{{ url_for('search') }}" method="POST" enctype="multipart/form-data">
+                    <!-- <div class="wrap"> -->
+                        <h1>Simpsons Image Repository</h1>
+                        <p>Either search a Simpsons character or upload an image of one!</p>
+                        <div class="search">
+                            <input type="text" class="searchTerm" name="character" placeholder="Search a Simpsons character (Homer, Marge, Lisa, or Bart)">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    <!-- </div> -->
+                </form>
+            </div>
+            <div class="layer2">
+                <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+                    <p>
+                        <span><input class="file" type="file" name="file"></span>
+                        <span><input class="submit" type="submit" value="Submit"></span>
+                    </p>
+                </form> 
+            </div> 
+        </div>
+        <div class="row">
+            <div class="column">
+                {% for image_path in image_paths %}
+                    <img src="{{ image_path }}">
+                {% endfor %}
+            </div>
+            <!-- <div class="column">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+            </div>
+            <div class="column">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+            </div>
+            <div class="column">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+                <img src="{{ bart }}">
+            </div> -->
+        </div>      
+    </body>
+</html>
