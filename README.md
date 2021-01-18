@@ -13,7 +13,7 @@ The theme of my image repository are images from the main characters in the Simp
 Here is a summary of the features I have implemented for the image repository:
 
 - Search for images of a character via uploading an image of that same character
-  - Fine-tuned a convolutional neural network (Resnet) to classify an image with either Homer, Marge, Bart, or Lisa on Kaggle dataset (Please see my [Kaggle notebook] for details)
+  - Fine-tuned a convolutional neural network (Resnet) to classify an image with either Homer, Marge, Bart, or Lisa on Kaggle dataset (Please see my [Kaggle notebook](https://github.com/lauradang/simpson-image-repository/blob/main/simpsons-fastai.ipynb) for details)
     - API has a confidence threshold, so the model is able to classify an image with none of the characters 
   - Classification/Prediction is used to query the SQLite database and retrieve the images of the predicted character
 - Search for images of a character via text
